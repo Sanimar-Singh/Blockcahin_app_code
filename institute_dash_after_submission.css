@@ -1,0 +1,213 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black, darkblue);
+    color: white;
+}
+
+/* Container for main content */
+.container {
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+/* Heading styling */
+h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 0 0 20px white;
+    margin-bottom: 30px;
+}
+
+/* Button styling with color gradient and centered */
+.custom-btn {
+    background: linear-gradient(to right, purple, pink);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid pink;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.custom-btn:hover {
+    box-shadow: 0 0 20px pink;
+    color: pink;
+}
+
+/* Section headings */
+.students-heading {
+    color: limegreen;
+    text-shadow: 0 0 10px limegreen;
+    margin: 30px 0 10px;
+}
+
+.quizzes-heading {
+    color: red;
+    text-shadow: 0 0 10px red;
+    margin: 30px 0 10px;
+}
+
+/* Card styling with gradient text effect */
+.card-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+    margin-left: 50px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.8); /* Add slight background to cards */
+    padding: 15px;
+    margin: 10px 0;
+    width: 400px; /* Increase width for quiz cards */
+    border-radius: 8px;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
+    border: 2px solid transparent; /* Make the border transparent initially */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Submission info card */
+.submissions-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Fetch submissions button */
+.fetch-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid limegreen;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.fetch-btn:hover {
+    box-shadow: 0 0 10px limegreen;
+    color: limegreen;
+}
+
+/* Green gradient text and hover for student cards */
+.green-glow {
+    border-color: limegreen;
+    color: transparent;
+    background: linear-gradient(to right, limegreen, darkgreen);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.green-glow:hover {
+    box-shadow: 0 0 20px limegreen;
+    transform: translateX(10px); /* Animate the card to slide slightly right */
+}
+
+/* Red gradient text and hover for quiz cards */
+.red-glow {
+    border-color: red;
+    color: transparent;
+    background: linear-gradient(to right, red, darkred);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.red-glow:hover {
+    box-shadow: 0 0 20px red;
+    transform: translateX(10px); /* Animate the card to slide slightly right */
+}
+
+/* Align sections to the left */
+.section {
+    margin-left: 50px;
+    text-align: left;
+}
+
+/* Styling for the cube images */
+.cube {
+    position: absolute;
+    width: 247px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* Top-left cube */
+.top-left {
+    top: -56px;
+    left: -4%;
+    transform: rotate(15deg);
+}
+
+/* Submissions section styling */
+#submissions-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Submissions list styling */
+#submissions-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card container to hold both student and score cards */
+.submission-card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the container */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Subtle white glow */
+}
+
+/* Card for student name */
+.student-card {
+    flex: 1;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #00ff99; /* Light green text for student names */
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ff99; /* Green glow for student card */
+}
+
+/* Card for score */
+.score-card {
+    flex: 1;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #ffcc00; /* Yellow text for score */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #ffcc00; /* Yellow glow for score card */
+}
+
+/* Submission heading */
+#submissions-section h2 {
+    color: #ffffff;
+    text-shadow: 0 0 20px white;
+    margin-bottom: 20px;
+    font-size: 24px;
+}

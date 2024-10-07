@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Thank You Heading Styles */
+.thank-you-heading {
+    text-align: center;
+    color: white; /* Glowy white color */
+    text-shadow: 0 0 10px white, 0 0 20px white; /* Glowing effect */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.thank-you-text {
+    text-align: center;
+    color: #ccc; /* Light color for the message */
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 30px; /* Space below the message */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #ff007f; /* Neon pink border */
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.75), 0 0 25px rgba(255, 0, 127, 0.5), 0 0 35px rgba(255, 0, 127, 0.3);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.back-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.back-btn:hover {
+    background-color: #e60078;
+}
+
+/* Background elements (optional, can be styled or removed) */
+body .top-right {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+    background: url('image.png') no-repeat center center / contain;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+body .bottom-left {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 350px;
+    height: 350px;
+    background: url('image.png') no-repeat center center / contain;
+    transform: rotate(-30deg);
+    z-index: 1;
+}

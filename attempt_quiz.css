@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px;
+}
+
+.glowy-heading {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+
+.glowy-list-heading, .glowy-quiz-heading {
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+
+.quiz-list {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-card {
+    border: 2px solid orange; /* Neon orange border */
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center; /* Center text */
+    width: 90%; /* Cover almost full width */
+}
+
+.question-card {
+    border: 2px solid lightcoral; /* Light red border */
+    padding: 10px;
+    margin: 20px 0;
+    width: 90%; /* Full width */
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option-card {
+    border: 2px solid white; /* White border */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 48%; /* Adjust width to fit two options side by side */
+}
+
+.option-card.active {
+    background-color: green; /* Active state */
+}
+
+.option-card:hover {
+    box-shadow: 0 0 10px green; /* Glow effect on hover */
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

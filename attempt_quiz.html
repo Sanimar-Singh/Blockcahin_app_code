@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="attempt_quiz.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dashboard Heading -->
+        <h1 class="glowy-heading">Student Dashboard for One</h1>
+        
+        <!-- List of Quizzes -->
+        <h2 class="glowy-list-heading">List of Quizzes</h2>
+        <ul class="quiz-list">
+            <li class="quiz-card">
+                <span>Test Q</span> | <span>2 Questions</span> | <span>Time Allotted: 15 mins</span>
+            </li>
+        </ul>
+
+        <!-- Quiz Section -->
+        <h2 class="glowy-quiz-heading">Test Q</h2>
+        
+        <!-- Question Card 1 -->
+        <div class="question-card">
+            <span>Q1</span> | <span>Sigma</span> | <span>Marks: 2</span>
+        </div>
+        
+        <!-- Options for Question 1 -->
+        <div class="options-container">
+            <div class="option-card" data-question="1">A | Rizz</div>
+            <div class="option-card" data-question="1">B | Edge</div>
+        </div>
+        <div class="options-container">
+            <div class="option-card" data-question="1">C | Gyat</div>
+            <div class="option-card" data-question="1">D | Mew</div>
+        </div>
+
+        <!-- Question Card 2 -->
+        <div class="question-card">
+            <span>Q2</span> | <span>Skibidi</span> | <span>Marks: 3</span>
+        </div>
+
+        <!-- Options for Question 2 -->
+        <div class="options-container">
+            <div class="option-card" data-question="2">C | Toilet</div>
+            <div class="option-card" data-question="2">D | Streak</div>
+        </div>
+        <div class="options-container">
+            <div class="option-card" data-question="2">A | Gooning</div>
+            <div class="option-card" data-question="2">B | Looksmaxxer</div>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="submit-btn">Submit Quiz</button>
+    </div>
+
+    <script src="attempt_quiz.js"></script>
+</body>
+</html>

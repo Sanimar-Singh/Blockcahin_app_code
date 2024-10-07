@@ -1,0 +1,132 @@
+/* General body background remains same */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black, darkblue);
+    color: white;
+}
+
+/* The main container */
+.container {
+    padding: 20px;
+    text-align: center; /* Center the header and buttons */
+}
+
+/* Header styling */
+h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 0 0 20px white;
+    margin-bottom: 30px;
+}
+
+/* Button styling (for Add Student, Add Quiz) */
+.custom-btn {
+    background: linear-gradient(to right, darkpurple, pink);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid pink;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.custom-btn:hover {
+    box-shadow: 0 0 20px pink;
+    color: pink;
+}
+
+/* Styling for Add Quiz section */
+.add-quiz-section {
+    text-align: left; /* Align Add Quiz section to the left */
+    margin-left: 50px; /* Move it a bit from the left side */
+}
+
+.quiz-heading {
+    color: white;
+    font-size: 36px;
+    text-shadow: 0 0 20px white;
+    margin-bottom: 20px;
+}
+
+form {
+    font-size: 16px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent inputs */
+    color: white;
+}
+
+select {
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.9); /* Make the background white */
+    color: black; /* Set text color to black */
+    font-size: 16px; /* Ensure the text is readable */
+}
+
+/* Add spacing between blocks */
+label {
+    display: inline-block;
+    width: 100px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Add Question button with neon yellow fill */
+.yellow-btn {
+    background: linear-gradient(to right, yellow, gold);
+    color: black; /* Text color for visibility */
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.yellow-btn:hover {
+    box-shadow: 0 0 20px yellow; /* Glowy yellow shadow on hover */
+}
+
+/* Create Quiz button with neon green fill */
+.green-btn {
+    background: linear-gradient(to right, limegreen, green);
+    color: black; /* Text color for visibility */
+    border: 2px solid limegreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.green-btn:hover {
+    box-shadow: 0 0 20px limegreen; /* Glowy green shadow on hover */
+}
+
+/* Cancel button with neon red fill */
+.red-btn {
+    background: linear-gradient(to right, red, darkred);
+    color: black; /* Text color for visibility */
+    border: 2px solid red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.red-btn:hover {
+    box-shadow: 0 0 20px red; /* Glowy red shadow on hover */
+}
+

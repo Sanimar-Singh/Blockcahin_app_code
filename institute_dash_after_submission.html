@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard for One</title>
+    <link rel="stylesheet" href="institute_dash_after_submission.css">
+</head>
+<body>
+
+    <img src="image.png" alt="Glass Cube" class="cube top-left">
+
+    <div class="container">
+        <h1>Dashboard for One</h1>
+        <div class="buttons">
+            <button class="custom-btn">Add Student</button>
+            <button class="custom-btn">Add Quiz</button>
+        </div>
+
+        <!-- Students Section -->
+        <div class="section">
+            <h2 class="students-heading">Students</h2>
+            <ul class="card-list">
+                <li class="card green-glow">Jay Nadkarni (jayn)</li>
+                <li class="card green-glow">Bot1 (B)</li>
+                <li class="card green-glow">A (A)</li>
+            </ul>
+        </div>
+
+        <!-- Quizzes Section -->
+        <div class="section">
+            <h2 class="quizzes-heading">Quizzes</h2>
+            <ul class="card-list">
+                <li class="card red-glow">
+                    <span>TestQ1</span> 
+                    <div class="submissions-card">
+                        <span>Submissions: 5</span> 
+                        <button class="fetch-btn" onclick="fetchSubmissions()">Fetch Submissions</button>
+                    </div>
+                </li>
+                <!-- Add more quizzes as needed -->
+            </ul>
+        </div>
+
+        <!-- Submissions Section (empty initially, will be filled dynamically) -->
+        <div class="section" id="submissions-section" style="display: none;">
+            <h2 class="submissions-heading">Submissions of the Test</h2>
+            <ul id="submissions-list" class="card-list">
+                <!-- Student submissions will be injected here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="institute_dash_after_submission.js"></script>
+</body>
+</html>

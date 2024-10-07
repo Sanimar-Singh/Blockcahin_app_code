@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Confirmation</title>
+    <link rel="stylesheet" href="submitted.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="thank-you-heading">Thank You</h2>
+        <p class="thank-you-text">Your answers have been sent.</p>
+        
+        <div class="login-box">
+            <h2>Notes</h2>
+            <form id="notesForm">
+                <div class="input-box">
+                    <textarea id="notes" placeholder="Enter your notes here..." rows="4"></textarea>
+                </div>
+                <button type="button" class="login-btn" onclick="submitNotes()">Submit Notes</button>
+            </form>
+            <button class="back-btn" onclick="window.location.href='attempt_quiz.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function submitNotes() {
+            const notesField = document.getElementById('notes');
+            notesField.value = ''; // Clear the text area
+            alert('Your note has been sent successfully.');
+        }
+    </script>
+
+    <!-- Background elements -->
+    <div class="top-right"></div>
+    <div class="bottom-left"></div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    z-index: 2;
+    
+    /* Neon Pink Outline */
+    border: 2px solid #ff007f; /* Neon pink border */
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.75), 0 0 25px rgba(255, 0, 127, 0.5), 0 0 35px rgba(255, 0, 127, 0.3);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box select, .input-field input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    color: #888;
+}
+
+.input-field input {
+    padding-left: 40px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Background images for all four corners */
+
+/* Top-left corner */
+body::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 350px;
+    height: 350px;
+    background: url('image.png') no-repeat center center / contain;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+/* Bottom-right corner */
+body::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+    background: url('image.png') no-repeat center center / contain;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+/* Top-right corner */
+body .top-right {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+    background: url('image.png') no-repeat center center / contain;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+/* Bottom-left corner */
+body .bottom-left {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 350px;
+    height: 350px;
+    background: url('image.png') no-repeat center center / contain;
+    transform: rotate(-30deg);
+    z-index: 1;
+}

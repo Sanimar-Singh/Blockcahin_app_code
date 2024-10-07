@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.frontclass {
+    background: linear-gradient(to bottom, #7f14ad80, rgba(0, 0, 0, 1)); /* Light to black gradient */
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* Necessary for positioning the pseudo-element */
+}
+
+.frontclass::before {
+    content: '';
+    position: fixed; /* Fixed to cover the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bg.png'); /* Set the background image */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Position it behind the content */
+}
+
+.container {
+    position: relative; /* Allow content to overlay on the blurred background */
+    z-index: 1; /* Ensure the content appears above the blur */
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signup-button a {
+    position: absolute;
+    right: 1056px;
+    top: 67%;    /* Adjust top as needed */
+    transform: translateY(-50%);
+    background-color: #9b51e0; /* Purple button background */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 100px);
+    padding: 0 50px;
+}
+
+.hero .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.hero .content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+/* Get Started button styles */
+.btn-get-started {
+    position: absolute;
+    right: 1056px;
+    top: 67%;    /* Adjust top as needed */
+    transform: translateY(-50%);
+    background-color: #9b51e0; /* Purple button background */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+/* Topic selection styles */
+.topic-selection {
+    text-align: center;
+}
+
+.topic-selection p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.topic-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.topic-btn {
+    background: linear-gradient(135deg, #7b2cbf, #9d4edd); /* Purplish gradient */
+    color: white; /* Text color */
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing white text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.topic-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 150, 0.9), 0 0 30px rgba(255, 0, 150, 0.7), 
+                0 0 45px rgba(255, 0, 150, 0.6), 0 0 60px rgba(255, 0, 150, 0.5); /* Neon pink shadow */
+    color: white;
+}
+
+.topic-btn:active {
+    transform: scale(0.95);
+}
+
+/* Optional: Make icons inside the buttons glow too */
+.topic-btn i {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing icon */
+}
+
+.bottom-left-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 254px;
+    height: auto;
+}
+
+/* Style for the top-right image */
+.top-right-image {
+    position: absolute;
+    top: 6px;
+    right: 9px;
+    width: 224px;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black; /* Default background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* First Section: Innovate Section */
+.innovate-section {
+    background: url('image_2.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.innovate-section .left-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.innovate-section .right-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    position: relative;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Neon Glow Effect for Different Headings */
+.fast h2 {
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan;
+}
+
+.decentralized h2 {
+    color: #8a00ff;
+    text-shadow: 0 0 10px #8a00ff, 0 0 20px #8a00ff, 0 0 30px #8a00ff;
+}
+
+.scalable h2 {
+    color: #00ff44;
+    text-shadow: 0 0 10px #00ff44, 0 0 20px #00ff44, 0 0 30px #00ff44;
+}
+
+.cost-efficient h2 {
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+}
+
+/* Second Section: Community Section */
+.community-section {
+    background: url('image_3.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.community-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(45deg, #8a00ff, #ff007f);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.75), 0 0 20px rgba(255, 0, 127, 0.5);
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 127, 1), 0 0 40px rgba(255, 0, 127, 0.8);
+}
+
+/* Footer Section */
+footer.footer {
+    background: linear-gradient(to right, #1a1a4d, #1a1a4d 30%, #1a1a4d 70%, #151538);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+    margin-bottom: 8px;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover,
+.footer-right ul li a:hover {
+    color: #00ffcc; /* Slight neon hover effect */
+}
+
+.footer-right .footer-lang {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-right .lang-icon {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive Footer Design */
+@media screen and (max-width: 768px) {
+    footer.footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .footer-middle ul,
+    .footer-right ul {
+        text-align: center;
+    }
+}

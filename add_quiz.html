@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="add_quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- The header and buttons from the previous structure -->
+    <div class="container">
+        <h1>Dashboard for One</h1>
+        <div class="buttons">
+            <button class="custom-btn">Add Student</button>
+            <button class="custom-btn">Add Quiz</button>
+        </div>
+
+        <!-- The Add Quiz Section -->
+        <div class="add-quiz-section">
+            <h2 class="quiz-heading">Add Quiz</h2>
+            <form>
+                <label for="quizName">Quiz Name:</label>
+                <input type="text" id="quizName" name="quizName"><br><br>
+
+                <label for="question">Question 1:</label>
+                <input type="text" id="question" name="question"><br><br>
+
+                <label>Options:</label>
+                <input type="text" placeholder="Option 1">
+                <input type="text" placeholder="Option 2">
+                <input type="text" placeholder="Option 3">
+                <input type="text" placeholder="Option 4"><br><br>
+
+                <label>Correct Option:</label>
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select><br><br>
+
+                <button class="custom-btn yellow-btn">Add Question</button>
+                <button class="custom-btn green-btn">Create Quiz</button>
+                <button class="custom-btn red-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
